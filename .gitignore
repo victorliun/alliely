@@ -1,4 +1,19 @@
 #ignore those files and directories
 
+#ignore those files and directories
+
 activate
-env
+*.pyc
+!.travis.yml
+*.swp
+*.lock
+*.log
+*.pid
+cms/django
+*.DS_Store
+*.svn
+.*
+*.xml
+/*env*/
+#*#
+*~
