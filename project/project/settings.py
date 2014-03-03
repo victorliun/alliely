@@ -36,10 +36,23 @@ DEFAULT_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 )
 
 THIRD_PART_APPS = (
-
+    'cms', #
+    'mptt', # utilities for implementing a modified pre-order traversal tree
+    'menus', # helper for model independent hierarchical website navigation
+    'south', #intelligent schema and data migrations
+    'sekizai', # for css and js management
+    'cms.plugins.file',
+    'cms.plugins.flash',
+    'cms.plugins.googlemap',
+    'cms.plugins.flash',
+    'cms.plugins.link',
+    'cms.plugins.picture',
+    'cms.plugins.snippet',
+    'reversion',
 )
 
 LOCAL_APPS = (
@@ -55,20 +68,30 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.doc.XViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
+    'cms.middleware.language.LanguageCookieMiddleware',
 )
 
 ROOT_URLCONF = 'project.urls'
 
 WSGI_APPLICATION = 'project.wsgi.application'
-
+LANGUAGES = [
+    ('en', 'English'),
+]
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'rainbow_test',                      # Or path to database file if using sqlite3.
+        'NAME': 'allie_test',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'victor',
         'PASSWORD': 'lvxy',
@@ -164,6 +187,19 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.tz",
     "django.contrib.messages.context_processors.messages",
     "django.core.context_processors.request",
+    'cms.context_processors.media',
+    'sekizai.context_processors.sekizai',
+)
+
+TEMPLATE_DIRS = (
+    # The docs say it should be absolute path: PROJECT_PATH is precisely one.
+    # Life is wonderful!
+    os.path.join(BASE_DIR, "templates"),
+)
+
+CMS_TEMPLATES = (
+    ('base/template_sun.html', 'Template Sun'),
+    ('base/template_moon.html', 'Template Moon'),
 )
 
 MIDDLEWARE_CLASSES = (

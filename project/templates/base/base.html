@@ -1,0 +1,14 @@
+{% load url from future %}
+{% load cms_tags sekizai_tags %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+      {% render_block "css" %}
+  </head>
+  <body>
+      {% cms_toolbar %}
+      {% placeholder base_content %}
+      {% block base_content %}{% endblock %}
+      {% render_block "js" %}
+  </body>
+</html>
