@@ -2,7 +2,7 @@ from django.shortcuts import render_to_response
 from django.http import HttpResponse
 
 # Create your views here.
-def site_home(request, *args, **kwargs):
+def rose(request, *args, **kwargs):
 	"""
 	Display the home page of my site.
 	"""
