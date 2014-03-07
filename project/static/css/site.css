@@ -1,0 +1,301 @@
+/***
+*old style
+body {
+    color: #262626;
+    background: #f4f4f4;
+    font: normal 12px/18px Verdana, sans-serif;
+}
+
+
+div#dashboard {
+#    position: fixed;
+#    padding: 10px;
+#    border: solid 1px #cbcbcb;
+#    background: #fafafa;
+#    -moz-box-shadow: 0px 0px 10px #cbcbcb;
+#    -webkit-box-shadow: 0px 0px 10px #cbcbcb;
+#    left:50%;
+#    margin-left:-290px;
+#    bottom: 44px;
+    display:none;
+#    width:556px;
+}
+
+div#new_article {
+    display:none;
+}
+
+div#triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 20px 0 20px;
+    border-color: #D6D1D1 transparent transparent transparent;
+    position: fixed;
+    bottom: 34px;
+    left: 50%;
+    margin-left: -20px;
+    display:none;
+}
+
+#dashboard a {
+    outline: none;
+    position: relative;
+    text-decoration:initial;
+}
+
+#dashboard a img, div.travel, div.tech, div.recipe, div.light {
+    border: 1px solid #BBB;
+    padding: 2px;
+    margin: 5px 15px 10px 15px;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+}
+
+#dashboard div.travel, div.tech, div.recipe, div.light {
+    top: 0px;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    font-size: large;
+    background-color: antiquewhite;
+    opacity: 0.8;
+    display:none;
+}
+
+a img.last {
+    margin-right: 0;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    border-top: 2px solid #00aebf;
+}
+
+div.homeicon {
+    text-align: center;
+    height: 32px;
+}
+
+div.homeicon img{
+    width:32px;
+    margin-right: -75px;
+}
+
+div.main {
+    width: 660px;
+    margin: 40px auto 0 auto;
+    padding: 30px 60px 30px 60px;
+    border: solid 1px #cbcbcb;
+    background: #fafafa;
+    -moz-box-shadow: 0px 0px 10px #cbcbcb;
+    -webkit-box-shadow: 0px 0px 10px #cbcbcb;
+}
+
+#date_time {
+    float: right;
+    line-height: 32px;
+    margin-right: 10px;
+}
+
+#shortcuts {
+    position: absolute;
+    margin-left: 594px;
+}
+*/
+/***
+ *This CSS file define the style of page head and foot.
+ ***/
+
+body {
+    background: ghostwhite;
+    font-family: fantasy;
+}
+
+header {
+
+}
+
+#site_head {
+    width: 100%;
+    height: 72px;
+    background: lavender;
+    background: -webkit-gradient(linear,0 0,0 bottom,from(ghostwhite),to(lavender));
+    background: -moz-linear-gradient(top,ghostwhite,lavender);
+    background: -o-linear-gradient(top,ghostwhite,lavender);
+    position: fixed;
+    top: 0;
+    z-index: 800;
+}
+
+.width960 {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.animate_delay1s {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.site_logo {
+    background-color: chocolate;
+    width: 42px;
+    height: 38px;
+    margin: 8px 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    float: left;
+    padding: 5px 0;
+    text-align: center;
+    -webkit-box-shadow: 2px 2px 5px #66666;
+    -moz-box-shadow: 2px 2px 5px #66666;
+    box-shadow: 2px 2px 5px #66666;
+}
+
+.site_logo img {
+    width: 36px;
+    height: 36px;
+}
+
+#site_title {
+    font-size: 24px;
+    line-height: 32px;
+    text-shadow: 2px 2px 5px #999;
+    margin: 20px 0;
+    text-transform: uppercase;
+    float: left;
+}
+
+.multiple_text_shadow {
+    text-shadow: 2px 2px 0 rgba(175, 166, 166, 1), 6px 6px 0 rgba(50, 50, 50, 0.25);
+}
+
+.navigation {
+    float: right;
+}
+
+.navigation ul {
+    margin: 0;
+    clear: both;
+    float: right;
+    font-size: 16px;
+    height: 55px;
+    padding: 0;
+    position: relative;
+    width: 652px;
+    line-height: 36px;
+    list-style: none outside none;
+}
+
+.navigation ul li {
+    color: ghostwhite;
+    display: block;
+    float: left;
+    font-weight: 700;
+    width: 85px;
+    height: 30px;
+    padding: 20px 20px 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#container {
+    width: 680px;
+    margin: 100px auto 0;
+    padding: 30px 60px 30px 60px;
+    border: solid 1px lavender;
+    background: ghostwhite;
+    -moz-box-shadow: 0px 0px 10px lavender;
+    -webkit-box-shadow: 0px 0px 10px lavender;
+}
+
+#site_foot {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 5px;
+}
+
+#email_addr {
+    display: inline-block;
+    background: lavender;
+    -webkit-box-shadow: -2px -2px 5px lavender, 2px 0px 5px lavender;
+    -moz-box-shadow: -2px -2px 5px lavender, 2px 0px 5px lavender;
+    box-shadow: -2px -2px 5px lavender, 2px 0px 5px lavender;
+}
+
+aside {
+    position: fixed;
+    top: 160px;
+    right: 32px;
+}
+
+#calendar_view {
+    display: block;
+    border: 1px solid lavender;
+    top: 380px;
+}
+
+#tags {
+    display: block;
+    border: 1px solid lavender;
+    top: 280px;
+}
+
+#table_of_content {
+    display: block;
+    border: 1px solid lavender;
+}
+
+address {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: chocolate;
+}
+
+
+.navigation li.backLava {
+    height: 5px !important;
+    left: 10px;
+    position: absolute;
+    top: 58px !important;
+    width: 1px !important;
+    border-style: solid;
+    border-width: 0 62px 9px 62px;
+    border-color: transparent transparent chocolate transparent;
+}
+
+/***
+.navigation li.selectedLava a {
+    color: chocolate;
+}
+/***
+ * Simply apply class="clearfix" to the elements cantaining the floats.
+ ***/
+.clearfix:before, .clearfix:after {content: "", display: table;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;}
+
+/*在 CSS 裡使用 @import。
+以下解釋為當螢幕寬度在 400px ~700px 之間，就會將 test.css 的檔案呼叫匯入，並套用設定。*/
+@import "site.media.css" only screen and (min-width: 400px) and (max-width: 800px)

@@ -56,6 +56,7 @@ THIRD_PART_APPS = (
 )
 
 LOCAL_APPS = (
+    'apps.emotion_recorder',
 
 )
 
@@ -150,7 +151,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    
+#    "/Users/Victor/Public/www/alliely.com/project/static",
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

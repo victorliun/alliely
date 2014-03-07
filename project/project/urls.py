@@ -18,4 +18,5 @@ urlpatterns = patterns('',
     #url(r'^', include('cms.urls')),
 )
 
-urlpatterns += staticfiles_urlpatterns()
+urlpatterns += patterns('',
+	(r'^static/(.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),)
