@@ -7,7 +7,7 @@ from django.conf import settings
 class EmotionRecorderView(TemplateView):
     "view for homepage"
     
-    template_name = "base/base.html"
+    template_name = "emotion_recorder/emotion_recorder.html"
     
     def get_context_data(self, **kwargs):
         """Populate all context of the template with all setting configures"""
