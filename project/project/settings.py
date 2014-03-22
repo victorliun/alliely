@@ -53,6 +53,7 @@ THIRD_PART_APPS = (
     'cms.plugins.picture',
     'cms.plugins.snippet',
     'reversion',
+    'django_reset',
 )
 
 LOCAL_APPS = (
@@ -263,3 +264,7 @@ LOGGING = {
         },
     }
 }
+
+FIXTURE_DIRS = (
+   os.path.join(BASE_DIR, "fixtures"),
+)

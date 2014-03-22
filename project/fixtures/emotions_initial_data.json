@@ -1,0 +1,20 @@
+[
+    {"pk": 1, 
+     "model":"emotion_recorder.emotions", 
+     "fields": {
+            "description": "I'm Happy", 
+            "lastest": false, 
+            "pub_date": "2014-03-22T09:30:51Z", 
+            "slug": "", "author": 1
+            }
+    },
+    {"pk": 2, 
+     "model": "emotion_recorder.emotions", 
+     "fields": {
+        "description": "Sleep late tonight", 
+        "lastest": true, 
+        "pub_date": "2014-03-22T09:35:32Z", 
+        "slug": "", 
+        "author": 1}
+    }
+]

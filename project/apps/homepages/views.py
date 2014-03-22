@@ -1,10 +1,12 @@
+# Create your views here.
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 
-# Create your views here.
+@login_required(login_url='/login/')
 def rose(request, *args, **kwargs):
 	"""
 	Display the home page of my site.
 	"""
-	template = "base/rose.html"
+	template = "base/home.html"
 	return render_to_response(template)

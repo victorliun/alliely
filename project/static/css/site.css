@@ -1,120 +1,9 @@
 /***
-*old style
-body {
-    color: #262626;
-    background: #f4f4f4;
-    font: normal 12px/18px Verdana, sans-serif;
-}
-
-
-div#dashboard {
-#    position: fixed;
-#    padding: 10px;
-#    border: solid 1px #cbcbcb;
-#    background: #fafafa;
-#    -moz-box-shadow: 0px 0px 10px #cbcbcb;
-#    -webkit-box-shadow: 0px 0px 10px #cbcbcb;
-#    left:50%;
-#    margin-left:-290px;
-#    bottom: 44px;
-    display:none;
-#    width:556px;
-}
-
-div#new_article {
-    display:none;
-}
-
-div#triangle {
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 10px 20px 0 20px;
-    border-color: #D6D1D1 transparent transparent transparent;
-    position: fixed;
-    bottom: 34px;
-    left: 50%;
-    margin-left: -20px;
-    display:none;
-}
-
-#dashboard a {
-    outline: none;
-    position: relative;
-    text-decoration:initial;
-}
-
-#dashboard a img, div.travel, div.tech, div.recipe, div.light {
-    border: 1px solid #BBB;
-    padding: 2px;
-    margin: 5px 15px 10px 15px;
-    vertical-align: top;
-    width: 100px;
-    height: 100px;
-}
-
-#dashboard div.travel, div.tech, div.recipe, div.light {
-    top: 0px;
-    position: absolute;
-    text-align: center;
-    line-height: 100px;
-    font-size: large;
-    background-color: antiquewhite;
-    opacity: 0.8;
-    display:none;
-}
-
-a img.last {
-    margin-right: 0;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: #fff;
-    border-top: 2px solid #00aebf;
-}
-
-div.homeicon {
-    text-align: center;
-    height: 32px;
-}
-
-div.homeicon img{
-    width:32px;
-    margin-right: -75px;
-}
-
-div.main {
-    width: 660px;
-    margin: 40px auto 0 auto;
-    padding: 30px 60px 30px 60px;
-    border: solid 1px #cbcbcb;
-    background: #fafafa;
-    -moz-box-shadow: 0px 0px 10px #cbcbcb;
-    -webkit-box-shadow: 0px 0px 10px #cbcbcb;
-}
-
-#date_time {
-    float: right;
-    line-height: 32px;
-    margin-right: 10px;
-}
-
-#shortcuts {
-    position: absolute;
-    margin-left: 594px;
-}
-*/
-/***
  *This CSS file define the style of page head and foot.
  ***/
 
 body {
-    background: ghostwhite;
+    background-color: #ecece7;
     font-family: fantasy;
 }
 
@@ -124,11 +13,11 @@ header {
 
 #site_head {
     width: 100%;
-    height: 72px;
-    background: lavender;
-    background: -webkit-gradient(linear,0 0,0 bottom,from(ghostwhite),to(lavender));
-    background: -moz-linear-gradient(top,ghostwhite,lavender);
-    background: -o-linear-gradient(top,ghostwhite,lavender);
+    height: 58px;
+    background: rgb(62, 202, 246);
+    /**background: -webkit-gradient(linear,0 0,0 bottom,from(rgb(62, 202, 246)),to(#ecece7));
+    background: -moz-linear-gradient(top,rgb(62, 202, 246),#ecece7);
+    background: -o-linear-gradient(top,rgb(62, 202, 246),#ecece7);**/
     position: fixed;
     top: 0;
     z-index: 800;
@@ -147,10 +36,10 @@ header {
 }
 
 .site_logo {
-    background-color: chocolate;
-    width: 42px;
-    height: 38px;
-    margin: 8px 10px;
+    background-color: whitesmoke;
+    width: 35px;
+    height: 25px;
+    margin: 10px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -163,13 +52,13 @@ header {
 }
 
 .site_logo img {
-    width: 36px;
-    height: 36px;
+    width: 25px;
+    height: 25px;
 }
 
 #site_title {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 23px;
     text-shadow: 2px 2px 5px #999;
     margin: 20px 0;
     text-transform: uppercase;
@@ -181,19 +70,19 @@ header {
 }
 
 .navigation {
-    float: right;
+    float: left;
 }
 
 .navigation ul {
-    margin: 0;
+    margin: 16px;
     clear: both;
-    float: right;
+    float: left;
     font-size: 16px;
-    height: 55px;
+    height: 30px;
     padding: 0;
     position: relative;
     width: 652px;
-    line-height: 36px;
+    line-height: 30px;
     list-style: none outside none;
 }
 
@@ -202,9 +91,9 @@ header {
     display: block;
     float: left;
     font-weight: 700;
-    width: 85px;
+    width: 60px;
     height: 30px;
-    padding: 20px 20px 0;
+    padding: 4px 15px 0 20px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -212,13 +101,13 @@ header {
 }
 
 #container {
-    width: 680px;
-    margin: 100px auto 0;
+    width: 880px;
+    margin: 80px auto 0;
     padding: 30px 60px 30px 60px;
-    border: solid 1px lavender;
-    background: ghostwhite;
-    -moz-box-shadow: 0px 0px 10px lavender;
-    -webkit-box-shadow: 0px 0px 10px lavender;
+    border: solid 1px #ecece7;
+    background-color: #FDFDF8;
+    -moz-box-shadow: 0px 0px 10px #ecece7;
+    -webkit-box-shadow: 0px 0px 10px #ecece7;
 }
 
 #site_foot {
@@ -230,7 +119,7 @@ header {
 
 #email_addr {
     display: inline-block;
-    background: lavender;
+    background-color: #ecece7;
     -webkit-box-shadow: -2px -2px 5px lavender, 2px 0px 5px lavender;
     -moz-box-shadow: -2px -2px 5px lavender, 2px 0px 5px lavender;
     box-shadow: -2px -2px 5px lavender, 2px 0px 5px lavender;
@@ -265,12 +154,12 @@ address {
 
 a {
     text-decoration: none;
-    color: darkblue;
+    color: black;
 }
 
 a:hover {
     text-decoration: none;
-    color: chocolate;
+    color: lavender;
 }
 
 
