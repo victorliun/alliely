@@ -1,7 +1,14 @@
 {% extends "base/base.html" %}
 {% load cms_tags %}
 
+{%block title%} Create Emotion -  {{block.super}} {%endblock%}
 
 {% block content %}
-<h1>I know you wanna say things~</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <ul>
+            {{form.as_ul}}
+        </ul>
+        <input type="submit" value="Post"/>
+    </form>
 {%endblock%}
