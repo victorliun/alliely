@@ -3,5 +3,7 @@
 
 {%block title%} Emotions - {{ block.super }} {%endblock%}
 {% block content %}
-    <p>{{latest_emotion.author.username}}: {{latest_emotion.description}} at {{latest_emotion.pub_date}}</p>
+    {% for emotion in emotions %}
+    <p>{{emotion.author.username}}: {{emotion.description}} at {{emotion.pub_date}}</p>
+    {%endfor%}
 {%endblock%}

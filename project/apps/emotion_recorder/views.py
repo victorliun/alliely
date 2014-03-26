@@ -19,7 +19,7 @@ class EmotionRecorderView(TemplateView):
         
         context = super(EmotionRecorderView, self).get_context_data(**kwargs)
         context.update({'STATIC_URL':settings.STATIC_URL})
-        context['latest_emotion'] = Emotions.objects.filter(latest=True)[0]
+        context['emotions'] = Emotions.objects.filter(latest=True)
         return context
 
 emotion_recorder_view = EmotionRecorderView.as_view()
