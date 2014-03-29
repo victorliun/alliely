@@ -50,6 +50,15 @@
           </ul>
         </nav>
       </div>
+      {% if not request.user.username %}
+      <div id="login"><a href="/accounts/login?next={{request.path}}">Login</a>/
+        <a href="/accounts/register?next={{request.path}}">Register</a></div>
+      {% else %}
+      <div id="userinfo">
+        <a href="/accounts/profile">{{ request.user.username }} </a>/
+        <a href="/accounts/logout">Logout</a>
+      </div>
+      {% endif %}
     </header>
 
     <section id="container">

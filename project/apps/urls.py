@@ -11,6 +11,7 @@ urlpatterns = patterns('',
 
     url(r'^I_LOVE_U$', rose, name="rose"),
     url(r'^er/', include("apps.emotion_recorder.urls")),
-    url(r'^login/$', 'apps.auth.views.login_view', name='login'),
+    #url(r'^login/$', 'apps.auth.views.login_view', name='login'),
     url(r'^home/$', 'apps.homepages.views.rose', name='home'),
+    
     )

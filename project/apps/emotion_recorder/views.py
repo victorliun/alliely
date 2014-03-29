@@ -3,8 +3,10 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.conf import settings
-from django.views.generic.edit import FormView
+from django.views.generic.edit import CreateView
 from django.core.urlresolvers import reverse
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 from .models import Emotions
 from .forms import EmotionForm
@@ -25,10 +27,11 @@ class EmotionRecorderView(TemplateView):
 emotion_recorder_view = EmotionRecorderView.as_view()
 
 
-class EmotionCreateView(FormView):
+class EmotionCreateView(CreateView):
     """docstring for EmotionCreateView"""
     template_name = "emotion_recorder/emotion_recorder_form.html"
     form_class = EmotionForm
+    success_url = "/er/"
 
     def get_success_url(self):
         return self.request.POST.get("next", reverse("emotion_recorder"))
@@ -41,4 +44,4 @@ class EmotionCreateView(FormView):
         return super(EmotionCreateView, self).form_valid(form)
 
 
-emotion_create_view = EmotionCreateView.as_view()
+emotion_create_view = login_required(EmotionCreateView.as_view())

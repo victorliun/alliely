@@ -174,6 +174,8 @@ a:hover {
     border-color: transparent transparent chocolate transparent;
 }
 
+#login, #userinfo {
+line-height: 62px;
 /***
 .navigation li.selectedLava a {
     color: chocolate;
