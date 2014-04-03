@@ -14,3 +14,16 @@ Install virtualenv, run
 3.Activate your env
 ==> ln -s env/bin/activate
     source activate
+
+
+////
+Requirements:
+29/03/2014 - Add enhant for English wordspellcheck
+For Max OS
+>bew install enchant
+
+ubuntu
+> sudo apt-get install enchant
+
+++++
+> easy_install pyenchant

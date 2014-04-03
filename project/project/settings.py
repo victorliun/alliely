@@ -58,6 +58,7 @@ THIRD_PART_APPS = (
 
 LOCAL_APPS = (
     'apps.emotion_recorder',
+    'apps.oncommands',
 
 )
 

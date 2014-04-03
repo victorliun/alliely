@@ -1,6 +1,4 @@
 # Create your views here.
-from django.http import HttpResponse
-from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.conf import settings
 from django.views.generic.edit import CreateView
@@ -31,8 +29,7 @@ class EmotionCreateView(CreateView):
     """docstring for EmotionCreateView"""
     template_name = "emotion_recorder/emotion_recorder_form.html"
     form_class = EmotionForm
-    success_url = "/er/"
-
+    
     def get_success_url(self):
         return self.request.POST.get("next", reverse("emotion_recorder"))
 

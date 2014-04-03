@@ -1,6 +1,6 @@
 # Create your views here.
 from django.http import HttpResponseRedirect
-from django.shortcuts import render_to_response,redirect
+from django.shortcuts import render,redirect
 from django.template import RequestContext
 from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse
@@ -19,7 +19,7 @@ def login_view(request):
                 assert request.POST['next']
                 redirect_url = request.POST.get("next", reverse("home"))
                 return HttpResponseRedirect(redirect_url)
-    return render_to_response('auth/login.html', context_instance=RequestContext(request))
+    return render(request, 'auth/login.html')
 
 def logout_view(request):
     logout(request)

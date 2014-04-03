@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scraper-tester</title>
+    </head>
+    <body>
+        <div>
+            {%for item in data%}
+            <a href="{{item.companylink}}">{{item.companylink}}</a>
+            {{item.contact_info | safe}}
+            {%endfor%}
+        </div>  
+    </body>
+<html>
