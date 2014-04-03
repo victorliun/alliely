@@ -6,7 +6,8 @@
     <body>
         <div>
             {%for item in data%}
-            <a href="{{item.companylink}}">{{item.companylink}}</a>
+            <hr>
+            <a href="{{item.companylink}}">Products list by this company</a>
             {{item.contact_info | safe}}
             {%endfor%}
         </div>  
