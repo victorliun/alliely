@@ -22,7 +22,7 @@ def dirtybot_view(request):
     """test command for scraping"""
 
     new_data = []
-    with open('dirtybot/dirtybot/items2.json') as data_file:
+    with open('dirtybot/dirtybot/items3.json') as data_file:
         data = json.load(data_file)
         for item in data:
             new_item = {}

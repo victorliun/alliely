@@ -44,11 +44,11 @@ class DirtySpider(CrawlSpider):
         sel = Selector(response)
         item = DirtybotItem()
         #sites = sel.xpath("//div[@class='uiMultiBox-bdPrimary']/div[@class='contactDataBox-phone' and not(contains(@style,'display:none'))]//h3").extract()
-        sites = sel.xpath("//div[@class='uiMultiBox-bdPrimary']").extract()
+        contact_info = sel.xpath("//div[contains(concat(' ',normalize-space(@class),' '), 'typePoster')]").extract()
         companylink = sel.xpath("//a[@class='hireCompanySerpLink']/@href").extract()
-        if not sites and not companylink:
+        if not contact_info and not companylink:
             return
-        self.log(sites)
-        item["contact_info"] = sites
+        self.log(contact_info)
+        item["contact_info"] = contact_info
         item["companylink"] = companylink
         return item
