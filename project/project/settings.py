@@ -40,20 +40,21 @@ DEFAULT_APPS = (
 )
 
 THIRD_PART_APPS = (
-    'cms', #
+    #'cms', #
     'mptt', # utilities for implementing a modified pre-order traversal tree
     'menus', # helper for model independent hierarchical website navigation
     'south', #intelligent schema and data migrations
     'sekizai', # for css and js management
-    'cms.plugins.file',
-    'cms.plugins.flash',
-    'cms.plugins.googlemap',
-    'cms.plugins.flash',
-    'cms.plugins.link',
-    'cms.plugins.picture',
-    'cms.plugins.snippet',
+    #'cms.plugins.file',
+    #'cms.plugins.flash',
+    #'cms.plugins.googlemap',
+    #'cms.plugins.flash',
+    #'cms.plugins.link',
+    #'cms.plugins.picture',
+    #'cms.plugins.snippet',
     'reversion',
     'django_reset',
+    'tastypie',
 )
 
 LOCAL_APPS = (

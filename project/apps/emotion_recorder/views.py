@@ -10,7 +10,7 @@ from .models import Emotions
 from .forms import EmotionForm
 
 class EmotionRecorderView(TemplateView):
-    "view for homepage"
+    "View for emotions homepage"
     
     template_name = "emotion_recorder/emotion_recorder.html"
     
@@ -26,14 +26,16 @@ emotion_recorder_view = EmotionRecorderView.as_view()
 
 
 class EmotionCreateView(CreateView):
-    """docstring for EmotionCreateView"""
+    """docstring for EmotionCreateView: This view is for creating emotions."""
     template_name = "emotion_recorder/emotion_recorder_form.html"
     form_class = EmotionForm
     
     def get_success_url(self):
+        """Get the url to redirect after a successful validation of form"""
         return self.request.POST.get("next", reverse("emotion_recorder"))
 
     def form_valid(self, form):
+        """Validation of form: Nothing need to validate here. Just save author before save model."""
         emotion = form.save(commit=False)
         emotion.author = self.request.user
         emotion.save()

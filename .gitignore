@@ -13,6 +13,7 @@ cms/django
 *.DS_Store
 *.svn
 .*
+*.json
 *.xml
 /*env*/
 #*#

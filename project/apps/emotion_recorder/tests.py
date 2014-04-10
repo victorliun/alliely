@@ -6,11 +6,23 @@ Replace this with more appropriate tests for your application.
 """
 
 from django.test import TestCase
+from .models import Emotions
 
 
 class SimpleTest(TestCase):
-    def test_basic_addition(self):
+    """ Test Model Emotions."""
+    def setUp(self):
+        Emotions.objects.create(description="What a nice day", author=test_author)
+        Emotions.objects.create(description="I don't like rain", author=test_author)
+
+    def test_model_save_func(self):
         """
-        Tests that 1 + 1 always equals 2.
+        Save function should be able to set previous recorder to less latest
         """
-        self.assertEqual(1 + 1, 2)
+
+        em1 = Emotions.objects.get(description="What a nice day")
+        em2 = Emotions.objects.get(description="I don't like rain")
+        self.assertEqual(em1.latest, False)
+        self.assertEqual(em2.latest, True)
+
+    

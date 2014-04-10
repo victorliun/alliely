@@ -2,6 +2,7 @@
 import json
 from django.shortcuts import render
 from django.template import RequestContext
+from lxml import html
 
 from apps.oncommands.scripts.word_guess import word_guess
 
@@ -15,7 +16,13 @@ def word_guess_view(request, letters=None, length=None):
     letters = letters.replace(" ", '')
 
     possible_words = word_guess(letters, length)
-
+    lookup_url = "http://www.dict.cn/"
+    words_info = []
+    for word in possible_words:
+        word_meanings = {}
+        word_meanings['name'] = word
+        word_meanings['lookup_url'] = lookup_url + word
+        word_meanings['meanings'] = get_word_meanings(lookup_url+word)
     return render(request, "commands/word_guess.html", {"words":possible_words,})
 
 def dirtybot_view(request):

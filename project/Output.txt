@@ -1,0 +1,209 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+<meta property="fb:admins" content="217390"/>
+<meta property="fb:app_id" content="102141509867574"/>
+<meta property="og:title" content="TagCrowd.com"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://tagcrowd.com/"/>
+<meta property="og:image" content="http://tagcrowd.com/images/tc_logo.gif"/>
+<meta property="og:img" content="http://tagcrowd.com/images/tc_logo.gif"/>
+<meta property="og:site_name" content="TagCrowd.com"/>
+<meta property="og:description" content="Create your own word cloud from any text to visualize word frequency."/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="image_src" href="http://tagcrowd.com/images/tc_logo.gif"/>
+<link rel="canonical" href="http://tagcrowd.com/"/>
+<title>TagCrowd: make your own tag cloud from any text</title>
+<script type="text/javascript">document.documentElement.className='js';</script>
+<meta name="keywords" content="tag cloud, blogging, web 2.0, text analysis, word frequency, visualization, word cloud"/>
+<meta name="description" content="Create your own tag cloud from any text to visualize word frequency."/>
+<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-117822-2']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+</head>
+<body>
+<div id="container"> <!-- outer-most container (app + sidebar)  -->
+<div id="sidebar">
+<div class="pitch" style="margin-bottom:20px;">
+<span id="header">TagCrowd</span><br/>
+is <b>free</b> to use.<br/>
+<br/>
+If you find it useful, you can <a href="patrons.html">buy the developer coffee &raquo;</a>
+</div>
+<div class="pitch">
+<span style="font-size:85%;color:green;">NEW!</span>
+Support for uppercase letters.<br/>
+<a href="javascript:UserVoice.showPopupWidget();" title="TagCrowd feedback & support dialog">Got feedback?</a>
+</div>
+<div id="front_faq">
+<p style="font-size:18px;">FAQ</p>
+<p><a href="faq.html#whatis" onClick="_gaq.push(['_trackEvent', 'FrontFAQ', 'whatis']);">What is TagCrowd?</a></p>
+<p><a href="faq.html#howto" onClick="_gaq.push(['_trackEvent', 'FrontFAQ', 'howto']);">How do I make a word cloud?</a></p>
+<p><a href="faq.html#pairs" onClick="_gaq.push(['_trackEvent', 'FrontFAQ', 'pairs']);">How do I keep multiple words together in the cloud, e.g. New York?</a></p>
+<p><a href="faq.html#jpg" onClick="_gaq.push(['_trackEvent', 'FrontFAQ', 'jpg']);">How do I create an image or PDF of my cloud?</a></p>
+<p><a href="faq.html" onClick="_gaq.push(['_trackEvent', 'FrontFAQ', 'faq']);">more help...</a></p>
+</div>
+<br/>
+<div id="sharethis">
+<!--  Facebook Like Button -->
+<div id="fb-root"></div>
+<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+<script type="text/javascript">FB.init({appId:'102141509867574',channelUrl:'http://tagcrowd.com/fb_channel.html'});</script>
+<fb:like href="http://tagcrowd.com" layout="box_count" show_faces="true" width="150" font="lucida grande" align="center" onclick="_gaq.push(['_trackEvent', 'Social', 'FBlike']);"></fb:like>
+<br/><br/>
+<!-- Twitter button -->
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tagcrowd.com/" data-text="Cool! Instant word cloud from any text w/ TagCrowd." data-count="horizontal" onclick="_gaq.push(['_trackEvent', 'Social', 'Tweet']);">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<br/><br/>
+<!-- Google +1 button 
+<g:plusone href="http://tagcrowd.com/" onclick="_gaq.push(['_trackEvent', 'Social', 'G+1']);"></g:plusone>
+<img src="images/tc_logo.gif" style="display:none;" />
+
+<br/><br/>
+-->
+<!-- Flattr button 
+<a class="FlattrButton" style="display:none;" href="http://tagcrowd.com" onclick="_gaq.push(['_trackEvent', 'Social', 'Flattr']);"></a>
+<noscript><a href="http://flattr.com/thing/711976/TagCrowd-com" target="_blank">
+<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"  onclick="_gaq.push(['_trackEvent', 'Social', 'Flattr']);"/></a></noscript>
+
+<br/>
+-->
+<!-- Delicious -->
+<a href="http://del.icio.us/post" onclick="_gaq.push(['_trackEvent', 'Social', 'Delicious']);window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=700,height=400'); return false;"><img src="http://tagcrowd.com/images/xdelicious.small.gif.pagespeed.ic.zYXIpGoL0P.png" title="Save to del.icio.us" alt="Save to del.icio.us" border="1"/></a>
+<!-- Stumble -->
+<a href="http://www.stumbleupon.com/submit?url=http://tagcrowd.com&amp;title=TagCrowd%20-%20make%20your%20own%20tag%20cloud%20from%20any%20text" onclick="_gaq.push(['_trackEvent', 'Social', 'Stumble']);"><img border="0" src="http://tagcrowd.com/images/stumbleupon.gif.pagespeed.ce.7599LMX_G4.gif" alt="Stumble It!" title="Stumble It!"/></a>
+</div>
+<!-- Javascript disabled warning -->
+<div id="no-javascript">
+<img src="http://tagcrowd.com/images/xwarning.png.pagespeed.ic.vwgZ3pXtIF.png"/>
+<div style="color:red;font-size:13px">Javascript disabled</div><div style="clear: both;"></div>
+Enable Javascript in your browser preferences for enhanced experience.<br/>PDF and full-screen/ printable versions are disabled.
+</div>
+</div>
+<script type="text/javascript">_gaq.push(['_trackEvent','Param','Language','English']);_gaq.push(['_trackEvent','Param','Cloud Size','50']);_gaq.push(['_trackEvent','Param','Min. Frequency','1']);_gaq.push(['_trackEvent','Param','Show Frequency?','no']);_gaq.push(['_trackEvent','Param','Stemming?','yes']);_gaq.push(['_trackEvent','Param','Stoplist','no']);</script>
+<script type="text/javascript">_gaq.push(['_trackEvent','Error','','']);_gaq.push(['_trackEvent','Source','Paste','']);</script>
+<div id="wrapper"><div id="masthead"><table border="0" cellpadding="10" cellspacing="0" width="100%"><tr><td align="left"><a href="/"><img alt="TagCrowd logo" src="http://tagcrowd.com/images/xtc_logo.gif.pagespeed.ic.XB2rH3ep_I.png" title="TagCrowd logo"/></a></td> <td align="right"><div id="tagline"><span class="tagline3">Create</span> <span class="tagline1">your own</span> <span class="tagline4">tag cloud</span> <span class="tagline1">from</span> <span class="tagline3">any text</span> <span class="tagline1">to</span> <span class="tagline3">visualize</span> <span class="tagline2">word frequency.</span></div></td></tr></table></div><div id="navigation"><ul><li><a href="/">Start Over</a></li> <li><a href="blog/">Blog</a></li> <li><a href="faq.html">Help</a></li> <li><a href="feedback.html">Contact</a></li> <li><a href="patrons.html">Patrons of TagCrowd</a></li></ul></div><div id="app"><div id="topN"><a name="tagcloud">Showing top 17 of 17 possible words</a></div><div id="htmltagcloud">
+<span id="0" class="wrd tagcloud0"><a href="#tagcloud">allows</a></span>
+<span id="1" class="wrd tagcloud0"><a href="#tagcloud">associated</a></span>
+<span id="2" class="wrd tagcloud0"><a href="#tagcloud">based</a></span>
+<span id="3" class="wrd tagcloud0"><a href="#tagcloud">blog</a></span>
+<span id="4" class="wrd tagcloud0"><a href="#tagcloud">bunch</a></span>
+<span id="5" class="wrd tagcloud0"><a href="#tagcloud">discussed</a></span>
+<span id="6" class="wrd tagcloud0"><a href="#tagcloud">news</a></span>
+<span id="7" class="wrd tagcloud0"><a href="#tagcloud">online</a></span>
+<span id="8" class="wrd tagcloud0"><a href="#tagcloud">representation</a></span>
+<span id="9" class="wrd tagcloud0"><a href="#tagcloud">text</a></span>
+<span id="10" class="wrd tagcloud10"><a href="#tagcloud">tocloud</a></span>
+<span id="11" class="wrd tagcloud0"><a href="#tagcloud">topics</a></span>
+<span id="12" class="wrd tagcloud0"><a href="#tagcloud">users</a></span>
+<span id="13" class="wrd tagcloud0"><a href="#tagcloud">visual</a></span>
+<span id="14" class="wrd tagcloud10"><a href="#tagcloud">website</a></span>
+<span id="15" class="wrd tagcloud0"><a href="#tagcloud">weight</a></span>
+<span id="16" class="wrd tagcloud0"><a href="#tagcloud">words</a></span>
+</div><div id="resize">resize browser window to arrange text</div>	<div id="save-button" class="float-left">
+<a href="#" id="save-as" class="save-button-on">Save as...</a>
+</div>
+<div id="printable" class="float-left">
+<a href="javascript:html_embed('embed_code');" id="embed_link" onclick="_gaq.push(['_trackEvent', 'Save As', 'HTML']);">
+<img src="http://tagcrowd.com/images/xhtml_icon.gif.pagespeed.ic.BdVixRI7P7.png"/>&nbsp;HTML embed</a>&nbsp;&nbsp;&nbsp;
+<a href="javascript:reload_fullscreen();">
+<img src="http://tagcrowd.com/images/printer.gif.pagespeed.ce.wZgjadoGzH.gif"/>
+printable/full-screen</a>&nbsp;&nbsp;&nbsp;
+<a href="javascript:reload_pdf();">
+<img src="http://tagcrowd.com/images/xpdf.png.pagespeed.ic.lKqzeufr2y.png"/>
+PDF</a>
+</div>
+<div id="embed_code">HTML code to embed in your own webpages:<br/><textarea name="cloudsource" rows="10" cols="65" onmouseup="this.select()">&lt;!--
+begin tag cloud : generated by TagCrowd.com
+Feel free to modify as long as you keep this notice.
+
+EMBEDDING INSTRUCTIONS:
+1. Customize your cloud's style by editing the CSS where it says CUSTOMIZE below.
+2. Insert this code in its entirety into your webpage or blog post.
+
+This code and its rendered image are released under the Creative Commons Attribution-Noncommercial 3.0 Unported License. (http://creativecommons.org/licenses/by-nc/3.0/)
+
+For COMMERCIAL USE LICENSING, visit http://tagcrowd.com/licensing.html
+--&gt;
+&lt;style type=&quot;text/css&quot;&gt;&lt;!-- #htmltagcloud{
+
+/******************************************
+ * CUSTOMIZE CLOUD CSS BELOW (optional)
+ */
+	font-size: 100%;
+	width: auto;		/* auto or fixed width, e.g. 500px   */
+	font-family:'lucida grande','trebuchet ms',arial,helvetica,sans-serif;
+	background-color:#fff;
+	margin:1em 1em 0 1em;
+	border:2px dotted #ddd;
+	padding:2em; 
+/******************************************
+ * END CUSTOMIZE
+ */
+
+}#htmltagcloud{line-height:2.4em;word-spacing:normal;letter-spacing:normal;text-transform:none;text-align:justify;text-indent:0}#htmltagcloud a:link{text-decoration:none}#htmltagcloud a:visited{text-decoration:none}#htmltagcloud a:hover{color:white;background-color:#05f}#htmltagcloud a:active{color:white;background-color:#03d}.wrd{padding:0;position:relative}.wrd a{text-decoration:none}.tagcloud0{font-size:1.0em;color:#ACC1F3;z-index:10}.tagcloud0 a{color:#ACC1F3}.tagcloud1{font-size:1.4em;color:#ACC1F3;z-index:9}.tagcloud1 a{color:#ACC1F3}.tagcloud2{font-size:1.8em;color:#86A0DC;z-index:8}.tagcloud2 a{color:#86A0DC}.tagcloud3{font-size:2.2em;color:#86A0DC;z-index:7}.tagcloud3 a{color:#86A0DC}.tagcloud4{font-size:2.6em;color:#607EC5;z-index:6}.tagcloud4 a{color:#607EC5}.tagcloud5{font-size:3.0em;color:#607EC5;z-index:5}.tagcloud5 a{color:#607EC5}.tagcloud6{font-size:3.3em;color:#4C6DB9;z-index:4}.tagcloud6 a{color:#4C6DB9}.tagcloud7{font-size:3.6em;color:#395CAE;z-index:3}.tagcloud7 a{color:#395CAE}.tagcloud8{font-size:3.9em;color:#264CA2;z-index:2}.tagcloud8 a{color:#264CA2}.tagcloud9{font-size:4.2em;color:#133B97;z-index:1}.tagcloud9 a{color:#133B97}.tagcloud10{font-size:4.5em;color:#002A8B;z-index:0}.tagcloud10 a{color:#002A8B}.freq{font-size:10pt !important;color:#bbb}#credit{text-align:center;color:#333;margin-bottom:0.6em;font:0.7em 'lucida grande',trebuchet,'trebuchet ms',verdana,arial,helvetica,sans-serif}#credit a:link{color:#777;text-decoration:none}#credit a:visited{color:#777;text-decoration:none}#credit a:hover{color:white;background-color:#05f}#credit a:active{text-decoration:underline}// --&gt;
+&lt;/style&gt;
+
+&lt;div id=&quot;htmltagcloud&quot;&gt; &lt;span id=&quot;0&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;allows&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;1&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;associated&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;2&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;based&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;3&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;blog&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;4&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;bunch&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;5&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;discussed&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;6&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;news&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;7&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;online&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;8&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;representation&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;9&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;text&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;10&quot; class=&quot;wrd tagcloud10&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;tocloud&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;11&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;topics&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;12&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;users&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;13&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;visual&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;14&quot; class=&quot;wrd tagcloud10&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;website&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;15&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;weight&lt;/a&gt;&lt;/span&gt; &lt;span id=&quot;16&quot; class=&quot;wrd tagcloud0&quot;&gt;&lt;a href=&quot;#tagcloud&quot;&gt;words&lt;/a&gt;&lt;/span&gt; &lt;/div&gt;&lt;div id=&quot;credit&quot;&gt;created at &lt;a href=&quot;http://tagcrowd.com&quot;&gt;TagCrowd.com&lt;/a&gt;&lt;/div&gt;
+
+&lt;!-- end tag cloud : generated by TagCrowd.com : please keep this notice --&gt;
+</textarea></div><br/><br/><form method="post" action="/" enctype="multipart/form-data" 0 name="tagcrowd" id="tc_form">
+<h3>Choose your text source:</h3><div id="nojs-source-control"><div id="nojs-buttons"><label><input type="radio" name="source" value="text" checked="checked" id="radio-text"/>Paste Text</label> <label><input type="radio" name="source" value="url_file" id="radio-url"/>Web Page URL</label> <label><input type="radio" name="source" value="uploaded_file" id="radio-upload"/>Upload File</label></div></div><div id="source-control"><ul id="buttons"><li><a href="#paste" class="selected" id="src_control3">Paste Text</a></li> <li><a href="#url" id="src_control1">Web Page URL</a></li> <li><a href="#upload" id="src_control2">Upload File</a></li></ul> <div class="sourcebox3 tabdiv" id="paste">Paste text to be visualized:<div id="desc">plain text, 500 kilobyte max</div> <textarea name="text" id="paste-area">ToCloud is an online website that allows visual representation of some text as a bunch of words based on a weight associated to each word. Using ToCloud on a blog, news website will allow users to find about topics that are being discussed.</textarea></div> <div class="sourcebox1 tabdiv" id="url"><div class="src-header">Web page URL:<div id="desc">e.g. http://myblog.com</div></div><input type="text" name="url_file" size="35" class="float-left"/></div> <div class="sourcebox2 tabdiv" id="upload"><div class="src-header">Upload a file:<div id="desc">plain text, 5 megabyte max</div></div><input type="file" name="uploaded_file" size="25" maxlength="80"/> <br/></div></div><div id="visualize-div"><div class="hidden" id="loader"><img src="http://tagcrowd.com/images/ajax-loader.gif.pagespeed.ce.wLQTnTIGV1.gif"/></div> <div id="visualize"><input value="Visualize!" name="tc_submit" id="tc_submit" type="submit"/></div></div><h3 style="font-size:1.45em;">Options:</h3><div class="options-div"><div class="option-header">Language of text:<div id="desc">Ignore common words in this language</div></div><select name="language">
+<option value="none">none</option>
+<option value="Czech">Czech</option>
+<option value="Danish">Danish</option>
+<option value="Dutch">Dutch</option>
+<option selected="selected" value="English">English</option>
+<option value="Finnish">Finnish</option>
+<option value="French">French</option>
+<option value="German">German</option>
+<option value="Google search">Google search</option>
+<option value="Hungarian">Hungarian</option>
+<option value="Italian">Italian</option>
+<option value="Norwegian">Norwegian</option>
+<option value="Polish">Polish</option>
+<option value="Portuguese">Portuguese</option>
+<option value="Romanian">Romanian</option>
+<option value="Spanish">Spanish</option>
+<option value="Swedish">Swedish</option>
+</select></div><div class="options-div"><div class="option-header">Maximum number of words to show?<div id="desc">25 - 100 is a good range</div></div><input type="text" name="topTags" value="50" size="4" maxlength="4"/></div><div class="options-div"><div class="option-header">Minimum frequency?<div id="desc">Don't show infrequent words</div></div><input type="text" name="minFreq" value="1" size="4" maxlength="4"/></div><div class="options-div"><div class="option-header">Show frequencies?<div id="desc">Show word count next to each word</div></div><label><input type="radio" name="showFreq" value="no" checked="checked"/>no</label><br/> <label><input type="radio" name="showFreq" value="yes"/>yes</label><br/></div><div class="options-div"><div class="option-header">Group similar words? (English only)<div id="desc">eg: learn, learned, learning -> learn</div></div><label><input type="radio" name="doStemming" value="no"/>no</label><br/> <label><input type="radio" name="doStemming" value="yes" checked="checked"/>yes</label><br/></div><div class="options-div"><div class="option-header">Convert to lowercase?<div id="desc">eg: PhD -> phd, FBI -> fbi, Rio -> rio</div></div><label><input type="radio" name="lettercase" value="lowercase" checked="checked"/>lowercase</label><br/> <label><input type="radio" name="lettercase" value="original"/>original</label><br/></div><div class="options-div"><div class="option-header">Don't show these words:<div id="desc">Exclude unwanted words.</div></div><textarea name="stoplist" cols="26" id="stoplist-area"></textarea></div><input type="hidden" name="fullscreen" value=""/><input type="hidden" name="pdf" value=""/><div><input type="hidden" name=".cgifields" value="source"/><input type="hidden" name=".cgifields" value="showFreq"/><input type="hidden" name=".cgifields" value="lettercase"/><input type="hidden" name=".cgifields" value="doStemming"/></div></form></div><div id="footer"><ul><li>Created by <a href="http://steinbock.org/">Daniel Steinbock</a></li> <li>&nbsp;</li> <li>|</li> <li>&nbsp;</li> <li><a href="privacy.html">Privacy Policy</a></li> <li>&nbsp;</li> <li>|</li> <li>&nbsp;</li> <li><a href="tos.html">Terms of Service</a></li> <li>&nbsp;</li> <li>|</li> <li>&nbsp;</li> <li><a href="http://tagcrowd.com/patrons.html">Become a TagCrowd Patron</a></li></ul></div></div></div><!-- Correct fb_xd_fragment Bug Start -->
+<script type="text/javascript">document.getElementsByTagName('html')[0].style.display='block';</script>
+<!-- Correct fb_xd_fragment Bug End -->
+<script type="text/javascript">//<![CDATA[
+(function(){var s=document.createElement('script'),t=document.getElementsByTagName('script')[0];s.type='text/javascript';s.async=true;s.src='http://api.flattr.com/js/0.6/load.js?mode=auto';t.parentNode.insertBefore(s,t);})();
+//]]></script>
+<!-- // Google Javascript libraries & JQuery -->
+<script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAA7f6qEInCrWRFjBz7D6ErlxQVDFfRoMl4BtYl7Bg9CrSmpd8kixQAPIT08ahMSjiPOzoa1IffULs2lg"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+<script type="text/javascript">//<![CDATA[
+(function($){$.fn.TextAreaExpander=function(minHeight,maxHeight){var hCheck=!($.browser.msie||$.browser.opera);function ResizeTextarea(e){e=e.target||e;var vlen=e.value.length,ewidth=e.offsetWidth;if(vlen!=e.valLength||ewidth!=e.boxWidth){if(hCheck&&(vlen<e.valLength||ewidth!=e.boxWidth))e.style.height="0px";var h=Math.max(e.expandMin,Math.min(e.scrollHeight,e.expandMax));e.style.overflow=(e.scrollHeight>h?"auto":"hidden");e.style.height=h+"px";e.valLength=vlen;e.boxWidth=ewidth;}
+return true;};this.each(function(){if(this.nodeName.toLowerCase()!="textarea")return;var p=this.className.match(/expand(\d+)\-*(\d+)*/i);this.expandMin=minHeight||(p?parseInt('0'+p[1],10):0);this.expandMax=maxHeight||(p?parseInt('0'+p[2],10):99999);ResizeTextarea(this);if(!this.Initialized){this.Initialized=true;$(this).css("padding-top",0).css("padding-bottom",0);$(this).bind("keyup",ResizeTextarea).bind("focus",ResizeTextarea);}});return this;};})(jQuery);jQuery(document).ready(function(){jQuery("textarea[class*=expand]").TextAreaExpander();});
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+(function(a){a.fn.autoResize=function(j){var b=a.extend({onResize:function(){},animate:true,animateDuration:150,animateCallback:function(){},extraSpace:20,limit:1000},j);this.filter('textarea').each(function(){var c=a(this).css({resize:'none','overflow-y':'hidden'}),k=c.height(),f=(function(){var l=['height','width','lineHeight','textDecoration','letterSpacing'],h={};a.each(l,function(d,e){h[e]=c.css(e)});return c.clone().removeAttr('id').removeAttr('name').css({position:'absolute',top:0,left:-9999}).css(h).attr('tabIndex','-1').insertBefore(c)})(),i=null,g=function(){f.height(0).val(a(this).val()).scrollTop(10000);var d=Math.max(f.scrollTop(),k)+b.extraSpace,e=a(this).add(f);if(i===d){return}i=d;if(d>=b.limit){a(this).css('overflow-y','');return}b.onResize.call(this);b.animate&&c.css('display')==='block'?e.stop().animate({height:d},b.animateDuration,b.animateCallback):e.height(d)};c.unbind('.dynSiz').bind('keyup.dynSiz',g).bind('keydown.dynSiz',g).bind('change.dynSiz',g)});return this}})(jQuery);
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+$(document).ready(function(){$('#save-as').removeClass('save-button-on');$('#visualize').append('<a href="#">Visualize!</a>');$('#tc_submit').addClass("hidden");if($('#tc_form input[@name="source"]:checked').val()=='url_file'){$('#source-control').tabs({fx:{height:'toggle',duration:'fast'},selected:1});}
+else if($('#tc_form input[@name="source"]:checked').val()=='uploaded_file'){$('#source-control').tabs({fx:{height:'toggle',duration:'fast'},selected:2});}
+else if($('#tc_form input[@name="source"]:checked').val()=='text'){$('#source-control').tabs({fx:{height:'toggle',duration:'fast'},selected:0});}
+$("#source-control").bind("tabsselect",function(event,ui){var src=ui.index;if(src==0){$('#radio-text').attr("checked","checked");}
+else if(src==1){$('#radio-url').attr("checked","checked");}
+else if(src==2){$('#radio-upload').attr("checked","checked");}});$('a:#embed_link').click(function(event){$('#embed_code').toggle('fast');event.preventDefault();});$('a:#save-as').click(function(event){$('#printable').toggle('slide','fast');$('#save-as').toggleClass('save-button-on');if($('#embed_code').is(':visible')){$('#embed_code').hide('fast');}
+event.preventDefault();});$('#stoplist-area').autoResize({onResize:function(){$(this).css({opacity:0.8});},animateCallback:function(){$(this).css({opacity:1});},animateDuration:150,extraSpace:1,limit:180,animate:true,});$('#tc_form').submit(function(){$('#loader').removeClass("hidden");});$('#visualize').click(function(event){$('#tc_form').submit();event.preventDefault();});});
+//]]></script>
+<!-- // Google +1 button -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">function popUp(URL){window.open(URL,'tagscrub','width=500,height=500,toolbar=0,scrollbars=1,location=0,status=0,menubar=0,resizable=1,');}</script>
+<!-- // UserVoice sidebar-feedback-widget -->
+<script type="text/javascript">(function(){if(document.tagcrowd.fullscreen.value!='1'){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src=('https:'==document.location.protocol?'https://':'http://')+'widget.uservoice.com/AfbuFb18F5JvfSd6qWIbaA.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s);}})();</script>
+<!-- // Misc utility javascripts -->
+<script type="text/javascript">function popup2(url,name,w,h)
+{params='width='+w;params+=',height='+h;params+=',toolbar=0,scrollbars=1,location=0,status=0,menubar=1,directories=0,resizable=1';newwin=window.open(url,name,params);if(window.focus){newwin.focus()}}</script>
+<script type="text/javascript">function unhide(divID){var item=document.getElementById(divID);if(item){item.className='unhidden';}}
+function hide(divID){var item=document.getElementById(divID);if(item){item.className='hidden';}}
+function toggle_hide(divID){var item=document.getElementById(divID);if(item){if(item.className=='hidden'){item.className='unhidden';}else{item.className='hidden';}}}
+function visualize(){unhide('loader');document.tagcrowd.submit();}
+function html_embed(divID){var item=document.getElementById(divID);if(item){if(item.className=='hidden'){item.className='unhidden';}}}
+function reload_fullscreen(){popup2('','fullscreen_popup',600,600);document.tagcrowd.fullscreen.value='yes';document.tagcrowd.pdf.value='';document.tagcrowd.target='fullscreen_popup';document.tagcrowd.submit();document.tagcrowd.fullscreen.value='';document.tagcrowd.target='_self';}
+function reload_pdf(){document.tagcrowd.pdf.value='yes';document.tagcrowd.fullscreen.value='';document.tagcrowd.submit();document.tagcrowd.pdf.value='';}</script>
+</body></html>
