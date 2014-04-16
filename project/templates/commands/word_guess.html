@@ -1,0 +1,10 @@
+{% extends "base/base.html" %}
+
+{%block title%} Word Guess - {{ block.super }} {%endblock%}
+{% block content %}
+    <h1> Possible combinations </h1>
+    {% for words in words %}
+    <p><a href="{{lookup_url}}{{word}}">{{word}}</a>:</p>
+    {%endfor%}
+
+{%endblock%}
